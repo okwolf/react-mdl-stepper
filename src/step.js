@@ -122,7 +122,7 @@ Step.propTypes = {
   count: PropTypes.number,
   isActive: PropTypes.bool,
   setStep: PropTypes.func,
-  onNext: PropTypes.func.isRequired,
+  onNext: PropTypes.func,
   children(props, propName) {
     const children = props[propName];
 
