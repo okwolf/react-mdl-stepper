@@ -127,7 +127,7 @@ Step.propTypes = {
     const children = props[propName];
 
     React.Children.forEach(children, (child) => {
-      if ((child.type !== StepActions) || (child.type !== StepContent)) {
+      if ((child.type !== StepActions) && (child.type !== StepContent)) {
         throw new Error(
           ```
             Expected \`StepContent\` or \`StepActions\` 
